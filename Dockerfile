@@ -23,4 +23,4 @@ CMD ["/usr/bin/supervisord"]
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf
 COPY php-www.conf /etc/php/7.0/fpm/pool.d/www.conf
-COPY default /etc/nginx/sites-available/default
+COPY nginx-http /etc/nginx/sites-available/default
