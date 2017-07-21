@@ -1,6 +1,6 @@
 # coroin/app
 
-A minimal Docker container for building [laravel](https://laravel.com) applications.
+A minimal install for building [laravel](https://laravel.com) applications.
 
 ### Installation
 
@@ -17,5 +17,5 @@ To build the image from source:
 ```
 $ git clone https://github.com/coroin/app.git
 $ cd app
-$ sudo docker build -t coroin/app .
+$ docker build -t coroin/app .
 ```
