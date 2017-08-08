@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt update \
     && apt install -y curl git nano nginx nodejs php-fpm php-curl php-gd php-imap php-mbstring \
-        php-mcrypt php-memcached php-mysql php-xml php-xdebug php-zip supervisor unzip zip \
+        php-mcrypt php-memcached php-mysql php-soap php-xml php-xdebug php-zip supervisor unzip zip \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
     && mkdir -p /run/php \
     && apt -y autoremove \
