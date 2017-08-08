@@ -20,7 +20,4 @@ EXPOSE 80
 
 CMD ["/usr/bin/supervisord"]
 
-COPY conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY conf/php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf
-COPY conf/php-www.conf /etc/php/7.0/fpm/pool.d/www.conf
-COPY conf/nginx-http /etc/nginx/sites-available/default
+COPY etc/ /etc/
