@@ -13,8 +13,9 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y libpng-dev nginx nodejs supervisor \
     && apt-get install -y php7.2-fpm php7.2-curl php7.2-gd php7.2-imap php7.2-mbstring php7.2-memcached php7.2-mysql \
-        php7.2-soap php7.2-xml php7.2-xdebug php7.2-zip \
+        php7.2-soap php7.2-xml php7.2-xdebug php7.2-zip php-codesniffer \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
+    && wget -O /usr/bin/phpunit https://phar.phpunit.de/phpunit-7.phar && chmod +x /usr/bin/phpunit \
     && mkdir -p /run/php7.2 \
     && apt-get -y autoremove \
     && apt-get clean \
