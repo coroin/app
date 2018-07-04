@@ -1,6 +1,6 @@
 # coroin/app
 
-A minimal install for building [laravel](https://laravel.com) applications.
+A minimal install for building [laravel](https://laravel.com) applications with [composer](https://getcomposer.org) and [npm](https://nodejs.org).
 
 ### Installation
 
