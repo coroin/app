@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -q -y \
-        apt-transport-https autoconf automake ca-certificates curl gcc git gnupg g++ lsb-release make nano unzip wget zip \
+        apt-transport-https automake ca-certificates curl dh-autoreconf gcc git gnupg g++ libtool lsb-release make nano unzip wget zip \
     && wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
     && sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list' \
     && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
